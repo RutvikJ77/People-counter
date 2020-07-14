@@ -6,11 +6,11 @@
 
 ![people-counter-python](./images/people-counter-image.png)
 
-## What it Does
+## What it Does?
 
 The people counter application will demonstrate how to create a smart video IoT solution using Intel® hardware and software tools. The app will detect people in a designated area, providing the number of people in the frame, average duration of people in frame, and total count.
 
-## How it Works
+## How it Works?
 
 The counter will use the Inference Engine included in the Intel® Distribution of OpenVINO™ Toolkit. The model used should be able to identify people in a video frame. The app should count the number of people in the current frame, the duration that a person is in the frame (time elapsed between entering and exiting a frame) and the total count of people. It then sends the data to a local web server using the Paho MQTT Python package.
 
@@ -18,7 +18,7 @@ You will choose a model to use and convert it with the Model Optimizer.
 
 ![architectural diagram](./images/arch_diagram.png)
 
-## Requirements
+## Requirements ->
 
 ### Hardware
 
@@ -35,7 +35,7 @@ You will choose a model to use and convert it with the Model Optimizer.
 *   MQTT Mosca server
   
         
-## Setup
+## Setup ->
 
 ### Install Intel® Distribution of OpenVINO™ toolkit
 
@@ -83,7 +83,7 @@ From the main directory:
    npm install
    ```
 
-## What model to use
+## Which model to use?
 
 It is up to you to decide on what model to use for the application. You need to find a model not already converted to Intermediate Representation format (i.e. not one of the Intel® Pre-Trained Models), convert it, and utilize the converted model in your application.
 
@@ -183,7 +183,7 @@ To see the output on a web based interface, open the link [http://0.0.0.0:3004](
 **Note:**
 User has to give `-video_size` command line argument according to the input as it is used to specify the resolution of the video or image file.
 
-## A Note on Running Locally
+## A Note on Running Locally ->
 
 The servers herein are configured to utilize the Udacity classroom workspace. As such,
 to run on your local machine, you will need to change the below file:
